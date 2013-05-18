@@ -1,3 +1,6 @@
+# Twisted Plugin Cache
+twisted/plugins/dropin.cache
+
 *.py[cod]
 
 # C extensions
