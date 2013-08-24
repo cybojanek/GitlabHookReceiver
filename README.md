@@ -15,7 +15,9 @@ There's no authentication, so use at your own risk, and preferably on an interna
 * **twisted**
 
 ## Pushover
-To use [Pushover], edit **pushover.json**, which is an array of dictionaries with token/user. Messages will be sent to all token/user pairs.
+To use [Pushover], edit **pushover.json**, which is an array of dictionaries with token/user. Messages will be sent to all token/user pairs. To have a nice icon: [logo-black.png]
+
+![ScreenShot](ScreenShot.png)
 
 ## Usage
 **GitLab.py** contains the code that listens in for a POST request, launches the script, contacts Pushover, and does logging. As you may have noticed, it does not contain a main...instead you launch it using **twistd**
@@ -39,3 +41,4 @@ twistd --pidfile=gitlab.pid -l gitlab.log GitLab --addr 127.0.0.1 --port 8504 --
 ```
 
 [Pushover]:https://pushover.net/
+[logo-black.png]:https://github.com/gitlabhq/gitlabhq/blob/master/app/assets/images/logo-black.png
