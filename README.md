@@ -19,6 +19,14 @@ To use [Pushover], edit **pushover.json**, which is an array of dictionaries wit
 
 ![ScreenShot](ScreenShot.png)
 
+## Installation
+
+* In Gitlab, add a web hook to point to the GitlabReceiver server, ie **http://127.0.0.1:8504**
+
+* Configure **pushover.json** with tokens and users
+
+* Launch the server (look at **Usage**)
+
 ## Usage
 **GitLab.py** contains the code that listens in for a POST request, launches the script, contacts Pushover, and does logging. As you may have noticed, it does not contain a main...instead you launch it using **twistd**
 
